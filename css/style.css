@@ -1,0 +1,166 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial';
+    font-size: 18px;
+}
+body
+{
+  /* display: none; */
+}
+a
+{
+    text-decoration: none;
+}
+h2
+{
+    font-size: 40px;
+}
+h3
+{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+hr
+{
+    border: 1px solid black;
+    position: relative;
+}
+img
+{
+    pointer-events: none;
+    user-select: none;
+}
+br
+{
+  user-select: none;
+}
+.back__image
+{
+    position: fixed;
+    z-index: -9999999;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url(../img/back/flag__reihstag.jpg) center center no-repeat;
+    background-size: cover;
+    filter: brightness(0.5);
+}
+.block__osnov
+{
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 200px;
+    color: white;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+.image__block__osnov
+{
+  position: relative;
+  height: 250px;
+  width: 350px;
+  display: inline-block;
+  float: left;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 4px;
+}
+.right__image__block__osnov
+{
+  float: right;
+}
+
+/* Index */
+.container
+{
+    display: block;
+    position: relative;
+    width: 80%;
+    min-height: 100px;
+    left: 50%;
+    margin-left: -40%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    color:white;
+}
+.block__header__logo
+{
+    position: relative;
+    background: darkred;
+    min-height: 70px;
+    display: block;
+    width: 100%;
+}
+.block__header__logo h2
+{
+    position: relative;
+    padding-top: 10px;
+}
+.block__header__logo img
+{
+    position: relative;
+    padding-top: 8px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+.block__links__header
+{
+  display: block;
+  position: relative;
+  padding-bottom: 10px;
+  margin-top: 5px;
+  margin-left: 68.5px;
+}
+.link__header
+{
+  transition: .5s ease;
+  color: white;
+  font-size: 20px;
+  margin-right: 15px;
+}
+.link__header:last-child
+{
+  margin-right: 0;
+}
+.link__header:hover
+{
+  transition: .5s ease;
+  color: lightgray;
+  text-decoration: underline;
+}
+.img__logo
+{
+    float: left;
+}
+
+
+
+/* history */
+.link__info
+{
+  display: inline-block;
+  transition: .5s ease;
+  color: white;
+  margin-bottom: 5px;
+}
+.link__info:first-child
+{
+  margin-top: 10px;
+}
+.link__info:last-child
+{
+  margin-bottom: 0;
+}
+.link__info:hover
+{
+  transition: .5s ease;
+  color: gray;
+  text-decoration: underline;
+}
