@@ -139,6 +139,15 @@ br
 {
     float: left;
 }
+.active__page
+{
+  font-weight: 600;
+  text-decoration: underline;
+}
+.tdu
+{
+  text-decoration: underline;
+}
 
 
 
@@ -163,4 +172,22 @@ br
   transition: .5s ease;
   color: gray;
   text-decoration: underline;
+}
+
+
+
+/* autor */
+.link__tgpgk
+{
+  transition: .5s ease;
+  color: white;
+}
+.link__tgpgk:hover
+{
+  transition: .5s ease;
+  color: gray;
+}
+.text__info__autor
+{
+  font-size: 14px;
 }
