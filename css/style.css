@@ -263,22 +263,21 @@ br
 }
 .block__osn__question
 {
-  transition: .5s ease;
   display: block;
   position: relative;
   background: gray;
   color: white;
   width: 100%;
-  height: 300px;
+  height: auto;
   margin-top: 100px;
   border-radius: 10px;
   padding: 15px;
   margin-bottom: 20px;
+  box-shadow: 0 0 15px black;
   display: none;
 }
 .block__get__info__user
 {
-  transition: .5s ease;
   display: block;
   position: absolute;
   background: gray;
@@ -293,6 +292,7 @@ br
   padding: 10px;
   margin-bottom: 20px;
   text-align: center;
+  box-shadow: 0 0 15px black;
 }
 .hr__quest
 {
@@ -339,29 +339,59 @@ br
 {
   transition: .5s ease;
   display: block;
-  position: absolute;
+  position: relative;
   width: 90%;
   height: 40px;
   border: 1px solid black;
   background: black;
   color: white;
   outline: none;
-  bottom: 10px;
   left: 50%;
   margin-left: -45%;
+  margin-top: 20px;
 }
 .button__start__on__block__osn__question:hover
 {
   transition: .5s ease;
   display: block;
-  position: absolute;
+  position: relative;
   width: 90%;
   height: 40px;
   border: 1px solid black;
   background: white;
   color: black;
   outline: none;
-  bottom: 10px;
   left: 50%;
   margin-left: -45%;
+  margin-top: 20px;
+}
+.block__bg__image__quest
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -9999;
+  background: url("../img/back/bg_quest_1.jpg") center center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.section__questions__quest
+{
+  display: none;
+}
+.text__questions
+{
+  margin-bottom: 10px;
+}
+.buttons__questions
+{
+  margin-bottom: 5px;
+}
+.buttons__questions:last-child
+{
+  margin-bottom: 0px;
 }
