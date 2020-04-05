@@ -386,6 +386,7 @@ br
 .text__questions
 {
   margin-bottom: 10px;
+  text-align: center;
 }
 .buttons__questions
 {
