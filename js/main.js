@@ -206,6 +206,16 @@ function clicked__button__question__1()
 		lose++;
 		question__count++;
 		question_16();
+	}else if ( question__count == 16 ) // 1 кнопка нажата при 16 вопросе:
+	{
+		lose++;
+		question__count++;
+		question_17();
+	}else if ( question__count == 17 ) // 1 кнопка нажата при 17 вопросе:
+	{
+		lose++;
+		question__count++;
+		question_18();
 	}
 }
 
@@ -272,6 +282,16 @@ function clicked__button__question__2()
 		win++;
 		question__count++;
 		question_16();
+	}else if ( question__count == 16 ) // 2 кнопка нажата при 16 вопросе:
+	{
+		lose++;
+		question__count++;
+		question_17();
+	}else if ( question__count == 17 ) // 2else if ( question__count == 17 ) // 1 кнопка нажата при 17 вопросе:
+	{
+		lose++;
+		question__count++;
+		question_18();
 	}
 }
 
@@ -338,6 +358,16 @@ function clicked__button__question__3()
 		lose++;
 		question__count++;
 		question_16();
+	}else if ( question__count == 16 ) // 3 кнопка нажата при 16 вопросе:
+	{
+		win++;
+		question__count++;
+		question_17();
+	}else if ( question__count == 17 ) // 3 кнопка нажата при 17 вопросе:
+	{
+		win++;
+		question__count++;
+		question_18();
 	}
 }
 
@@ -411,12 +441,21 @@ function question_2()
 
 		$(".text__questions").text("Сколько дней продолжалась Берлинская наступательная операция?"); // Текст вопроса.
 		$("#text__answer__from__user").hide(); // Прячем тектовое поле ответа, если нужны только кнопки.
+
+		// Скрытие кнопок: ( Исправление бага на мобильной версии )
+		$("#button__questions__5").hide();
+		$("#button__questions__4").hide();
+		$("#button__questions__3").hide();
+		$("#button__questions__2").hide();
+		$("#button__questions__1").hide();
+
 		// Показываем спрятанные ранее кнопки чтобы в них написать варианты ответов:
 		$("#button__questions__5").show();
 		$("#button__questions__4").show();
 		$("#button__questions__3").show();
 		$("#button__questions__2").show();
 		$("#button__questions__1").show();
+
 
 		$("#button__questions__5").text("58");
 		$("#button__questions__4").text("23");
@@ -438,10 +477,21 @@ function question_3()
 
 		$(".text__questions").text("Что за надпись на стене Рейхстага увековечила название одного из древнейших городов Липецкой области?"); // Текст вопроса.
 		$("#text__answer__from__user").hide(); // Прячем тектовое поле ответа, если нужны только кнопки.
-		// Показываем спрятанные ранее кнопки чтобы в них написать варианты ответов:
 
+		// Скрытие кнопок: ( Исправление бага на мобильной версии )
 		$("#button__questions__5").hide();
 		$("#button__questions__4").hide();
+		$("#button__questions__3").hide();
+		$("#button__questions__2").hide();
+		$("#button__questions__1").hide();
+
+		// Показываем спрятанные ранее кнопки чтобы в них написать варианты ответов:
+		// $("#button__questions__5").show();
+		// $("#button__questions__4").show();
+		$("#button__questions__3").show();
+		$("#button__questions__2").show();
+		$("#button__questions__1").show();
+
 		$("#button__questions__3").text("«Берлин наш!»"); // Ставим текст на кнопку.
 		$("#button__questions__2").text("«Мы из Ельца!»"); // Ставим текст на кнопку.
 		$("#button__questions__1").text("«За победу!»"); // Ставим текст на кнопку.
@@ -460,10 +510,21 @@ function question_4()
 
 		$(".text__questions").text("Как  после  1 мая 1945 года стали называть штурмовой флаг 150-й ордена Кутузова II степени Идрицкой стрелковой дивизии?"); // Текст вопроса.
 		$("#text__answer__from__user").hide(); // Прячем тектовое поле ответа, если нужны только кнопки.
-		// Показываем спрятанные ранее кнопки чтобы в них написать варианты ответов:
 
+		// Скрытие кнопок: ( Исправление бага на мобильной версии )
 		$("#button__questions__5").hide();
 		$("#button__questions__4").hide();
+		$("#button__questions__3").hide();
+		$("#button__questions__2").hide();
+		$("#button__questions__1").hide();
+
+		// Показываем спрятанные ранее кнопки чтобы в них написать варианты ответов:
+		// $("#button__questions__5").show();
+		// $("#button__questions__4").show();
+		$("#button__questions__3").show();
+		$("#button__questions__2").show();
+		$("#button__questions__1").show();
+
 		$("#button__questions__3").text("Знамя Отечества"); // Ставим текст на кнопку.
 		$("#button__questions__2").text("Знамя Победы"); // Ставим текст на кнопку.
 		$("#button__questions__1").text("Знамя Красной армии"); // Ставим текст на кнопку.
@@ -482,10 +543,21 @@ function question_5()
 
 		$(".text__questions").text("Когда началась Берлинская наступательная операция советских войск?"); // Текст вопроса.
 		$("#text__answer__from__user").hide(); // Прячем тектовое поле ответа, если нужны только кнопки.
-		// Показываем спрятанные ранее кнопки чтобы в них написать варианты ответов:
-		$("#button__questions__4").show();
 
+		// Скрытие кнопок: ( Исправление бага на мобильной версии )
 		$("#button__questions__5").hide();
+		$("#button__questions__4").hide();
+		$("#button__questions__3").hide();
+		$("#button__questions__2").hide();
+		$("#button__questions__1").hide();
+
+		// Показываем спрятанные ранее кнопки чтобы в них написать варианты ответов:
+		// $("#button__questions__5").show();
+		$("#button__questions__4").show();
+		$("#button__questions__3").show();
+		$("#button__questions__2").show();
+		$("#button__questions__1").show();
+
 		$("#button__questions__4").text("18 марта 1944 года"); // Ставим текст на кнопку.
 		$("#button__questions__3").text("16 апреля 1945 года"); // Ставим текст на кнопку.
 		$("#button__questions__2").text("26 мая 1945 года"); // Ставим текст на кнопку.
@@ -508,7 +580,21 @@ function question_6()
 		$(".text__questions").text(name + ", Напиши фамилию маршала первого Белорусского фронта во время взятия Берлина."); // Текст вопроса.
 		$("#text__answer__from__user").val(""); // Очистка тектового поля для дальнейшего заполнения.
 		$("#text__answer__from__user").show(); // Показываем тектовое поле.
+
+		// Скрытие кнопок: ( Исправление бага на мобильной версии )
+		// $("#button__questions__5").hide();
+		// $("#button__questions__4").hide();
+		// $("#button__questions__3").hide();
+		// $("#button__questions__2").hide();
+		$("#button__questions__1").hide();
+
 		// Показываем спрятанные ранее кнопки чтобы в них написать варианты ответов:
+		// $("#button__questions__5").show();
+		// $("#button__questions__4").show();
+		// $("#button__questions__3").show();
+		// $("#button__questions__2").show();
+		$("#button__questions__1").show();
+
 
 		$("#button__questions__5").hide();
 		$("#button__questions__4").hide();
@@ -531,7 +617,21 @@ function question_7()
 		$(".text__questions").text("На каком объекте Берлина было установлено красное знамя, позднее названное Знаменем Победы?"); // Текст вопроса.
 		$("#text__answer__from__user").val(""); // Очистка тектового поля для дальнейшего заполнения.
 		$("#text__answer__from__user").show(); // Показываем тектовое поле.
+
+		// Скрытие кнопок: ( Исправление бага на мобильной версии )
+		// $("#button__questions__5").hide();
+		// $("#button__questions__4").hide();
+		// $("#button__questions__3").hide();
+		// $("#button__questions__2").hide();
+		$("#button__questions__1").hide();
+
 		// Показываем спрятанные ранее кнопки чтобы в них написать варианты ответов:
+		// $("#button__questions__5").show();
+		// $("#button__questions__4").show();
+		// $("#button__questions__3").show();
+		// $("#button__questions__2").show();
+		$("#button__questions__1").show();
+
 
 		$("#button__questions__5").hide();
 		$("#button__questions__4").hide();
@@ -554,12 +654,21 @@ function question_8()
 		$(".text__questions").text("В ходе второй мировой войны Красная Армия полностью освободила территорию:"); // Текст вопроса.
 		$("#text__answer__from__user").val(""); // Очистка тектового поля для дальнейшего заполнения.
 		$("#text__answer__from__user").hide(); // Прячем тектовое поле ответа, если нужны только кнопки.
+
+		// Скрытие кнопок: ( Исправление бага на мобильной версии )
+		$("#button__questions__5").hide();
+		$("#button__questions__4").hide();
+		$("#button__questions__3").hide();
+		$("#button__questions__2").hide();
+		$("#button__questions__1").hide();
+
 		// Показываем спрятанные ранее кнопки чтобы в них написать варианты ответов:
+		// $("#button__questions__5").show();
 		$("#button__questions__4").show();
 		$("#button__questions__3").show();
 		$("#button__questions__2").show();
+		$("#button__questions__1").show();
 
-		$("#button__questions__5").hide();
 		$("#button__questions__4").text("Югославии"); // Ставим текст на кнопку.
 		$("#button__questions__3").text("Чехии"); // Ставим текст на кнопку.
 		$("#button__questions__2").text("Польши"); // Ставим текст на кнопку.
@@ -580,12 +689,21 @@ function question_9()
 		$(".text__questions").text("Кто после самоубийства Гитлера стал новым главой Третьего Рейха?"); // Текст вопроса.
 		$("#text__answer__from__user").val(""); // Очистка тектового поля для дальнейшего заполнения.
 		$("#text__answer__from__user").hide(); // Прячем тектовое поле ответа, если нужны только кнопки.
+
+		// Скрытие кнопок: ( Исправление бага на мобильной версии )
+		$("#button__questions__5").hide();
+		$("#button__questions__4").hide();
+		$("#button__questions__3").hide();
+		$("#button__questions__2").hide();
+		$("#button__questions__1").hide();
+
 		// Показываем спрятанные ранее кнопки чтобы в них написать варианты ответов:
+		// $("#button__questions__5").show();
 		$("#button__questions__4").show();
 		$("#button__questions__3").show();
 		$("#button__questions__2").show();
+		$("#button__questions__1").show();
 
-		$("#button__questions__5").hide();
 		$("#button__questions__4").text("Дёниц"); // Ставим текст на кнопку.
 		$("#button__questions__3").text("Геринг"); // Ставим текст на кнопку.
 		$("#button__questions__2").text("Гимлер"); // Ставим текст на кнопку.
@@ -606,12 +724,21 @@ function question_10()
 		$(".text__questions").text("Как называлась последняя крупная водная преграда перед Берлином?"); // Текст вопроса.
 		$("#text__answer__from__user").val(""); // Очистка тектового поля для дальнейшего заполнения.
 		$("#text__answer__from__user").hide(); // Прячем тектовое поле ответа, если нужны только кнопки.
-		// Показываем спрятанные ранее кнопки чтобы в них написать варианты ответов:
-		$("#button__questions__3").show();
-		$("#button__questions__2").show();
 
+		// Скрытие кнопок: ( Исправление бага на мобильной версии )
 		$("#button__questions__5").hide();
 		$("#button__questions__4").hide();
+		$("#button__questions__3").hide();
+		$("#button__questions__2").hide();
+		$("#button__questions__1").hide();
+
+		// Показываем спрятанные ранее кнопки чтобы в них написать варианты ответов:
+		// $("#button__questions__5").show();
+		// $("#button__questions__4").show();
+		$("#button__questions__3").show();
+		$("#button__questions__2").show();
+		$("#button__questions__1").show();
+
 		$("#button__questions__3").text("Река Эльба"); // Ставим текст на кнопку.
 		$("#button__questions__2").text("Река Одер"); // Ставим текст на кнопку.
 		$("#button__questions__1").text("Река Висла"); // Ставим текст на кнопку.
@@ -631,12 +758,21 @@ function question_11()
 		$(".text__questions").text("Кто командовал обороной Берлина?"); // Текст вопроса.
 		$("#text__answer__from__user").val(""); // Очистка тектового поля для дальнейшего заполнения.
 		$("#text__answer__from__user").hide(); // Прячем тектовое поле ответа, если нужны только кнопки.
-		// Показываем спрятанные ранее кнопки чтобы в них написать варианты ответов:
-		$("#button__questions__3").show();
-		$("#button__questions__2").show();
 
+		// Скрытие кнопок: ( Исправление бага на мобильной версии )
 		$("#button__questions__5").hide();
 		$("#button__questions__4").hide();
+		$("#button__questions__3").hide();
+		$("#button__questions__2").hide();
+		$("#button__questions__1").hide();
+
+		// Показываем спрятанные ранее кнопки чтобы в них написать варианты ответов:
+		// $("#button__questions__5").show();
+		// $("#button__questions__4").show();
+		$("#button__questions__3").show();
+		$("#button__questions__2").show();
+		$("#button__questions__1").show();
+
 		$("#button__questions__3").text("Кребс"); // Ставим текст на кнопку.
 		$("#button__questions__2").text("Кейтель"); // Ставим текст на кнопку.
 		$("#button__questions__1").text("Вейдлинг"); // Ставим текст на кнопку.
@@ -656,12 +792,21 @@ function question_12()
 		$(".text__questions").text("Когда было водружено Знамя Победы над Рейстагом?"); // Текст вопроса.
 		$("#text__answer__from__user").val(""); // Очистка тектового поля для дальнейшего заполнения.
 		$("#text__answer__from__user").hide(); // Прячем тектовое поле ответа, если нужны только кнопки.
-		// Показываем спрятанные ранее кнопки чтобы в них написать варианты ответов:
-		$("#button__questions__3").show();
-		$("#button__questions__2").show();
 
+		// Скрытие кнопок: ( Исправление бага на мобильной версии )
 		$("#button__questions__5").hide();
 		$("#button__questions__4").hide();
+		$("#button__questions__3").hide();
+		$("#button__questions__2").hide();
+		$("#button__questions__1").hide();
+
+		// Показываем спрятанные ранее кнопки чтобы в них написать варианты ответов:
+		// $("#button__questions__5").show();
+		// $("#button__questions__4").show();
+		$("#button__questions__3").show();
+		$("#button__questions__2").show();
+		$("#button__questions__1").show();
+
 		$("#button__questions__3").text("29 апреля 1945 года "); // Ставим текст на кнопку.
 		$("#button__questions__2").text("1 мая 1945 года"); // Ставим текст на кнопку.
 		$("#button__questions__1").text("30 апреля 1945 года"); // Ставим текст на кнопку.
@@ -681,12 +826,21 @@ function question_13()
 		$(".text__questions").text("Кто водрузил Знамя Победы над Рейстагом?"); // Текст вопроса.
 		$("#text__answer__from__user").val(""); // Очистка тектового поля для дальнейшего заполнения.
 		$("#text__answer__from__user").hide(); // Прячем тектовое поле ответа, если нужны только кнопки.
-		// Показываем спрятанные ранее кнопки чтобы в них написать варианты ответов:
-		$("#button__questions__3").show();
-		$("#button__questions__2").show();
 
+		// Скрытие кнопок: ( Исправление бага на мобильной версии )
 		$("#button__questions__5").hide();
 		$("#button__questions__4").hide();
+		$("#button__questions__3").hide();
+		$("#button__questions__2").hide();
+		$("#button__questions__1").hide();
+
+		// Показываем спрятанные ранее кнопки чтобы в них написать варианты ответов:
+		// $("#button__questions__5").show();
+		// $("#button__questions__4").show();
+		$("#button__questions__3").show();
+		$("#button__questions__2").show();
+		$("#button__questions__1").show();
+
 		$("#button__questions__3").text("Егоров"); // Ставим текст на кнопку.
 		$("#button__questions__2").text("Кантария"); // Ставим текст на кнопку.
 		$("#button__questions__1").text("Чуйков"); // Ставим текст на кнопку.
@@ -706,11 +860,21 @@ function question_14()
 		$(".text__questions").text("Когда был проведен Парад Победы на Красной площади в Москве? Кто им командовал?"); // Текст вопроса.
 		$("#text__answer__from__user").val(""); // Очистка тектового поля для дальнейшего заполнения.
 		$("#text__answer__from__user").hide(); // Прячем тектовое поле ответа, если нужны только кнопки.
+
+		// Скрытие кнопок: ( Исправление бага на мобильной версии )
+		$("#button__questions__5").hide();
+		$("#button__questions__4").hide();
+		$("#button__questions__3").hide();
+		$("#button__questions__2").hide();
+		$("#button__questions__1").hide();
+
 		// Показываем спрятанные ранее кнопки чтобы в них написать варианты ответов:
 		$("#button__questions__5").show();
 		$("#button__questions__4").show();
 		$("#button__questions__3").show();
 		$("#button__questions__2").show();
+		$("#button__questions__1").show();
+
 
 		$("#button__questions__5").text("24 июня 1945 года, Рокоссовский"); // Ставим текст на кнопку.
 		$("#button__questions__4").text("28 мая 1945 года, Конев"); // Ставим текст на кнопку.
@@ -733,16 +897,127 @@ function question_15()
 		$(".text__questions").text(name + ", проверем твою внимательность, какое количество войнов было награждено медалью «За взятие Берлина»? Ответ на этот вопрос был в тексте первого вопроса."); // Текст вопроса.
 		$("#text__answer__from__user").val(""); // Очистка тектового поля для дальнейшего заполнения.
 		$("#text__answer__from__user").hide(); // Прячем тектовое поле ответа, если нужны только кнопки.
-		// Показываем спрятанные ранее кнопки чтобы в них написать варианты ответов:
-		$("#button__questions__3").show();
-		$("#button__questions__2").show();
 
+		// Скрытие кнопок: ( Исправление бага на мобильной версии )
 		$("#button__questions__5").hide();
 		$("#button__questions__4").hide();
+		$("#button__questions__3").hide();
+		$("#button__questions__2").hide();
+		$("#button__questions__1").hide();
+
+		// Показываем спрятанные ранее кнопки чтобы в них написать варианты ответов:
+		// $("#button__questions__5").show();
+		// $("#button__questions__4").show();
+		$("#button__questions__3").show();
+		$("#button__questions__2").show();
+		$("#button__questions__1").show();
+
 		$("#button__questions__3").text("Около 1500 войнов"); // Ставим текст на кнопку.
 		$("#button__questions__2").text("Около 1082 войнов"); // Ставим текст на кнопку.
 		$("#button__questions__1").text("Около 1200 войнов"); // Ставим текст на кнопку.
 		$(".counter__questions").text("15 / 25"); // Счётчик вопросов.
+
+		$(".section__questions__quest").slideToggle(700);
+	}, 800)
+}
+
+// 16 вопрос:
+function question_16()
+{
+	$(".section__questions__quest").slideToggle(700);
+
+	setTimeout(function(){
+
+		$(".text__questions").text("Кто командовал 150-й стрелковой дивизией?"); // Текст вопроса.
+		$("#text__answer__from__user").val(""); // Очистка тектового поля для дальнейшего заполнения.
+		$("#text__answer__from__user").hide(); // Прячем тектовое поле ответа, если нужны только кнопки.
+
+		// Скрытие кнопок: ( Исправление бага на мобильной версии )
+		$("#button__questions__5").hide();
+		$("#button__questions__4").hide();
+		$("#button__questions__3").hide();
+		$("#button__questions__2").hide();
+		$("#button__questions__1").hide();
+
+		// Показываем спрятанные ранее кнопки чтобы в них написать варианты ответов:
+		// $("#button__questions__5").show();
+		// $("#button__questions__4").show();
+		$("#button__questions__3").show();
+		$("#button__questions__2").show();
+		$("#button__questions__1").show();
+
+		$("#button__questions__3").text("В.М. Шатилов"); // Ставим текст на кнопку.
+		$("#button__questions__2").text("И.С. Конев"); // Ставим текст на кнопку.
+		$("#button__questions__1").text("А.И. Негода"); // Ставим текст на кнопку.
+		$(".counter__questions").text("16 / 25"); // Счётчик вопросов.
+
+		$(".section__questions__quest").slideToggle(700);
+	}, 800)
+}
+
+// 17 вопрос:
+function question_17()
+{
+	$(".section__questions__quest").slideToggle(700);
+
+	setTimeout(function(){
+
+		$(".text__questions").text("Какого числа закончилась Берлинская операция?"); // Текст вопроса.
+		$("#text__answer__from__user").val(""); // Очистка тектового поля для дальнейшего заполнения.
+		$("#text__answer__from__user").hide(); // Прячем тектовое поле ответа, если нужны только кнопки.
+
+		// Скрытие кнопок: ( Исправление бага на мобильной версии )
+		$("#button__questions__5").hide();
+		$("#button__questions__4").hide();
+		$("#button__questions__3").hide();
+		$("#button__questions__2").hide();
+		$("#button__questions__1").hide();
+
+		// Показываем спрятанные ранее кнопки чтобы в них написать варианты ответов:
+		// $("#button__questions__5").show();
+		// $("#button__questions__4").show();
+		$("#button__questions__3").show();
+		$("#button__questions__2").show();
+		$("#button__questions__1").show();
+
+		$("#button__questions__3").text("2 мая"); // Ставим текст на кнопку.
+		$("#button__questions__2").text("9 мая"); // Ставим текст на кнопку.
+		$("#button__questions__1").text("8 мая"); // Ставим текст на кнопку.
+		$(".counter__questions").text("17 / 25"); // Счётчик вопросов.
+
+		$(".section__questions__quest").slideToggle(700);
+	}, 800)
+}
+
+// 18 вопрос:
+function question_18()
+{
+	$(".section__questions__quest").slideToggle(700);
+
+	setTimeout(function(){
+
+		$(".text__questions").text("Операция «Немыслимое» это:"); // Текст вопроса.
+		$("#text__answer__from__user").val(""); // Очистка тектового поля для дальнейшего заполнения.
+		$("#text__answer__from__user").hide(); // Прячем тектовое поле ответа, если нужны только кнопки.
+
+		// Скрытие кнопок: ( Исправление бага на мобильной версии )
+		$("#button__questions__5").hide();
+		$("#button__questions__4").hide();
+		$("#button__questions__3").hide();
+		$("#button__questions__2").hide();
+		$("#button__questions__1").hide();
+
+		// Показываем спрятанные ранее кнопки чтобы в них написать варианты ответов:
+		// $("#button__questions__5").show();
+		// $("#button__questions__4").show();
+		$("#button__questions__3").show();
+		$("#button__questions__2").show();
+		$("#button__questions__1").show();
+
+		$("#button__questions__3").text("План взятия Берлина"); // Ставим текст на кнопку.
+		$("#button__questions__2").text("Подписание союзниками сепаратного мира с Германией"); // Ставим текст на кнопку.
+		$("#button__questions__1").text("План войны союзников против СССР"); // Ставим текст на кнопку.
+		$(".counter__questions").text("18 / 25"); // Счётчик вопросов.
 
 		$(".section__questions__quest").slideToggle(700);
 	}, 800)
