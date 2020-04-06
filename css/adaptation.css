@@ -76,5 +76,39 @@
     margin-top: 0%;
     top: 80px;
   }
+  .button__decoration
+  {
+    transition: .5s ease;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    background: black;
+    color: white;
+    outline: none;
+  }
+  .button__decoration:hover
+  {
+    transition: .5s ease;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    background: black;
+    color: white;
+    outline: none;
+  }
+  .button__decoration:active
+  {
+    transition: .5s ease;
+    display: block;
+    position: relative;
+    color: black;
+    background: white;
+    cursor: pointer;
+    outline: none;
+  }
 
 }
