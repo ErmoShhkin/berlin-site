@@ -16,7 +16,7 @@ var povisil = ""; // Повысил - Повысила.
 
 // Скрываем кнопку с проверкой ответов от пользователя:
 $("#button__get__static__user").hide();
-$("#button__go__to__index").show();
+$("#button__go__to__index").hide();
 
 function reg__func() // Нажата кнопка регистрации квеста:
 {
