@@ -72,5 +72,63 @@
     <div class="block__bg__image__quest"></div>
 
 <script src="js/main.js"></script>
+<script>
+    var random__int__bg = 0;
+    
+    setInterval(function(){ // Замена фонового изображения каждые 10 секунд.
+        random__int__bg = Math.floor(Math.random() * (6 - 1) + 1); // Случайное число от 1 до 5.
+
+        if ( random__int__bg == 1 )
+        {
+            $(".block__bg__image__quest").addClass("block__img__from__js__1");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__2");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__4");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__5");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__6");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__3");
+        }else if ( random__int__bg == 2 )
+        {
+            $(".block__bg__image__quest").addClass("block__img__from__js__2");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__1");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__4");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__3");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__6");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__5");
+        }else if ( random__int__bg == 3 )
+        {
+            $(".block__bg__image__quest").addClass("block__img__from__js__3");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__2");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__4");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__5");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__6");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__1");
+        }else if ( random__int__bg == 4 )
+        {
+            $(".block__bg__image__quest").addClass("block__img__from__js__4");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__2");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__3");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__5");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__6");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__1");
+        }else if ( random__int__bg == 5 )
+        {
+            $(".block__bg__image__quest").addClass("block__img__from__js__5");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__2");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__3");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__4");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__1");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__6");
+        }else if ( random__int__bg == 6 )
+        {
+            $(".block__bg__image__quest").addClass("block__img__from__js__6");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__2");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__3");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__4");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__1");
+            $(".block__bg__image__quest").removeClass("block__img__from__js__5");
+        }
+    }, 10000)
+
+</script>
 </body>
 </html>
