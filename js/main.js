@@ -1194,6 +1194,18 @@ function get__static__user__answers()
 			$(".text__questions").text(name + ", это очень плохо! Правильных ответов у тебя: "+ win + " из 20. Это худший результат, тебе нужно лучше знать историю Великой Отечественной войны. Неправильных ответов: "+ lose +", ты очень сильно "+ podvel +" группу "+ number__group_1 +"-"+ number__group_2 +". Результат на твёрдую «2».");
 		}
 
+		$("#text__answer__from__user").val(""); // Очистка тектового поля для дальнейшего заполнения.
+		$("#text__answer__from__user").hide(); // Прячем тектовое поле ответа, если нужны только кнопки.
+
+		// Скрытие кнопок: ( Исправление бага на мобильной версии )
+		$("#button__questions__5").hide();
+		$("#button__questions__4").hide();
+		$("#button__questions__3").hide();
+		$("#button__questions__2").hide();
+		$("#button__questions__1").hide();
+		$(".counter__questions").show(); // Счётчик вопросов.
+		$(".counter__questions").text("Квест окончен!"); // Счётчик вопросов.
+
 		$("#button__get__static__user").hide();
 		$("#button__go__to__index").show();
 		
