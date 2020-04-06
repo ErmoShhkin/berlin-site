@@ -377,6 +377,11 @@ br
   -webkit-background-size: contain;
   background-size: contain;
 }
+.block__img__from__js__static
+{
+  transition: .5s ease;
+  background: url('../img/back/bg_quest_1.jpg') center center no-repeat;
+}
 .block__img__from__js__1
 {
   transition: .5s ease;
