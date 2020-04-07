@@ -10,6 +10,20 @@
     <title>Квест - Взятие Берлина</title>
 </head>
 <body style="overflow: hidden;">
+    <script>
+        // Прелоадер картинок:
+        var img_prldr = new Image();
+        img_prldr.onload = function() {
+            // Картинка загрузилась.
+        };
+        img_prldr.src = 'img/back/bg_quest_1.jpg';
+        img_prldr.src = 'img/back/bg_quest_2.jpg';
+        img_prldr.src = 'img/back/bg_quest_3.jpg';
+        img_prldr.src = 'img/back/bg_quest_4.jpg';
+        img_prldr.src = 'img/back/bg_quest_5.jpg';
+        img_prldr.src = 'img/back/bg_quest_6.jpg';
+
+    </script>
 
     <!-- <button onclick="states();">Статистика</button> -->
 
@@ -73,8 +87,10 @@
 
 <script src="js/main.js"></script>
 <script>
+
+    $(".block__bg__image__quest").addClass("block__img__from__js__static");
+
     var random__int__bg = 0;
-    
     setInterval(function(){ // Замена фонового изображения каждые 10 секунд.
         random__int__bg = Math.floor(Math.random() * (6 - 1) + 1); // Случайное число от 1 до 5.
 
@@ -134,10 +150,6 @@
             $(".block__bg__image__quest").removeClass("block__img__from__js__static");
         }
     }, 10000)
-
-    $(".block__bg__image__quest").addClass("block__img__from__js__for__load");
-    $(".block__bg__image__quest").removeClass("block__img__from__js__for__load");
-    $(".block__bg__image__quest").addClass("block__img__from__js__static");
 
 </script>
 </body>
