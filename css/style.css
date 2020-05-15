@@ -1,9 +1,16 @@
+@font-face
+{
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
 *
 {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Arial';
+    font-family: 'Montserrat';
     font-size: 18px;
 }
 body
@@ -283,7 +290,7 @@ br
   background: gray;
   color: white;
   width: 350px;
-  height: 370px;
+  height: auto;
   left: 50%;
   margin-left: -172.5px;
   margin-top: 50%;
