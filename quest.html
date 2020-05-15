@@ -17,12 +17,27 @@
             // Картинка загрузилась.
         };
         img_prldr.src = 'img/back/bg_quest_1.jpg';
-        img_prldr.src = 'img/back/bg_quest_2.jpg';
-        img_prldr.src = 'img/back/bg_quest_3.jpg';
-        img_prldr.src = 'img/back/bg_quest_4.jpg';
-        img_prldr.src = 'img/back/bg_quest_5.jpg';
-        img_prldr.src = 'img/back/bg_quest_6.jpg';
-
+        
+        setTimeout(function()
+        {
+            img_prldr.src = 'img/back/bg_quest_2.jpg';
+        }, 200);
+        setTimeout(function()
+        {
+            img_prldr.src = 'img/back/bg_quest_3.jpg';
+        }, 300);
+        setTimeout(function()
+        {
+            img_prldr.src = 'img/back/bg_quest_4.jpg';
+        }, 400);
+        setTimeout(function()
+        {
+            img_prldr.src = 'img/back/bg_quest_5.jpg';
+        }, 500);
+        setTimeout(function()
+        {
+            img_prldr.src = 'img/back/bg_quest_6.jpg';
+        }, 600);
     </script>
 
     <!-- <button onclick="states();">Статистика</button> -->
@@ -148,7 +163,7 @@
             $(".block__bg__image__quest").removeClass("block__img__from__js__5");
             $(".block__bg__image__quest").removeClass("block__img__from__js__static");
         }
-    }, 500)
+    }, 10000)
 
 </script>
 </body>
