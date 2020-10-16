@@ -152,6 +152,7 @@ br
 }
 .block__header__logo h2
 {
+    display: inline-block;
     position: relative;
     padding-top: 10px;
 }
@@ -387,7 +388,6 @@ br
 .block__img__from__js__static
 {
   transition: .5s ease;
-  background: url('../img/back/bg_quest_1.jpg') center center no-repeat;
 }
 .block__img__from__js__1
 {
@@ -397,27 +397,22 @@ br
 .block__img__from__js__2
 {
   transition: .5s ease;
-  background: url('../img/back/bg_quest_2.jpg') center center no-repeat;
 }
 .block__img__from__js__3
 {
   transition: .5s ease;
-  background: url('../img/back/bg_quest_3.jpg') center center no-repeat;
 }
 .block__img__from__js__4
 {
   transition: .5s ease;
-  background: url('../img/back/bg_quest_4.jpg') center center no-repeat;
 }
 .block__img__from__js__5
 {
   transition: .5s ease;
-  background: url('../img/back/bg_quest_5.jpg') center center no-repeat;
 }
 .block__img__from__js__6
 {
   transition: .5s ease;
-  background: url('../img/back/bg_quest_6.jpg') center center no-repeat;
 }
 .section__questions__quest
 {

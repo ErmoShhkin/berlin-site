@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<script src="js/jquery.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Тест - Взятие Берлина | Результат</title>
+</head>
+<body>
+
+	<div class="finishBlock">
+		<header>
+			<h3 style="margin-bottom: 10px;">Итоги</h3><hr>
+		</header>
+		<content>
+			<p>
+				<b>Имя:</b>
+				<span id="nameAnswers"></span>
+				<br>
+				<b>Фамилия:</b>
+				<span id="surnameAnswers"></span>
+				<br>
+				<b>Группа:</b>
+				<span id="groupAnswers"></span>
+				<br>
+				<b style="color: green;">Правильные ответы:</b>
+				<span id="winAnswers"></span>
+				<br>
+				<b style="color: red;">Неправильные ответы:</b>
+				<span id="loseAnswers"></span>
+				<br>
+				<b>Описание:</b><br>
+				Даны вопросы и ответы на них, здесь Вы можете посмотреть правильный ответ и Ваш. Если Вы нуждаетесь в объяснении ответа - можно нажть на кнопку "справка".
+			</p>
+
+			<!-- Блоки с вопросами: -->
+			<hr style="margin-top: 20px;">
+			<div class="verifyAnswers" style="margin-top: 20px;">
+				<b style="display: block; margin-top: 10px; margin-bottom: 10px;">ВОПРОС 1: <span id="title_q1" style="color:green;"></span></b>
+				<p>
+					Начнём с лёгкого вопроса: как ты думаешь, как назывался город, за который 1082 воина были награждены медалью, а шестьсот заслужили звание Героя Советского Союза?
+				</p><br>
+				Правильный ответ - <b>Берлин</b><br>
+				Ваш ответ - <b id="answer_user_q1">Ответ</b>
+			</div>
+
+			<hr style="margin-top: 20px;">
+			<div class="verifyAnswers" style="margin-top: 20px;">
+				<b style="display: block; margin-top: 10px; margin-bottom: 10px;">ВОПРОС 2: <span id="title_q2" style="color:green;"></span></b>
+				<p>
+					Сколько дней продолжалась Берлинская наступательная операция?
+				</p><br>
+				Правильный ответ - <b>23</b><br>
+				Ваш ответ - <b id="answer_user_q2">Ответ</b>
+			</div>
+
+			<hr style="margin-top: 20px;">
+			<div class="verifyAnswers" style="margin-top: 20px;">
+				<b style="display: block; margin-top: 10px; margin-bottom: 10px;">ВОПРОС 3: <span id="title_q3" style="color:green;"></span></b>
+				<p>
+					Что за надпись на стене Рейхстага увековечила название одного из древнейших городов Липецкой области?
+				</p><br>
+				Правильный ответ - <b>"Мы из Ельца"</b><br>
+				Ваш ответ - <b id="answer_user_q3">Ответ</b>
+			</div>
+
+			<hr style="margin-top: 20px;">
+			<div class="verifyAnswers" style="margin-top: 20px;">
+				<b style="display: block; margin-top: 10px; margin-bottom: 10px;">ВОПРОС 4: <span id="title_q4" style="color:green;"></span></b>
+				<p>
+					Как после 1 мая 1945 года стали называть штурмовой флаг 150-й ордена Кутузова II степени Идрицкой стрелковой дивизии?
+				</p><br>
+				Правильный ответ - <b>Знамя победы</b><br>
+				Ваш ответ - <b id="answer_user_q4">Ответ</b>
+			</div>
+
+			<hr style="margin-top: 20px;">
+			<div class="verifyAnswers" style="margin-top: 20px;">
+				<b style="display: block; margin-top: 10px; margin-bottom: 10px;">ВОПРОС 5: <span id="title_q5" style="color:green;"></span></b>
+				<p>
+					Когда началась Берлинская наступательная операция советских войск?
+				</p><br>
+				Правильный ответ - <b>16 апреля 1945 года</b><br>
+				Ваш ответ - <b id="answer_user_q5">Ответ</b>
+			</div>
+
+			<hr style="margin-top: 20px;">
+			<div class="verifyAnswers" style="margin-top: 20px;">
+				<b style="display: block; margin-top: 10px; margin-bottom: 10px;">ВОПРОС 6: <span id="title_q6" style="color:green;"></span></b>
+				<p>
+					Иван, Напиши фамилию маршала первого Белорусского фронта во время взятия Берлина.
+				</p><br>
+				Правильный ответ - <b>Жуков</b><br>
+				Ваш ответ - <b id="answer_user_q6">Ответ</b>
+			</div>
+
+			<hr style="margin-top: 20px;">
+			<div class="verifyAnswers" style="margin-top: 20px;">
+				<b style="display: block; margin-top: 10px; margin-bottom: 10px;">ВОПРОС 7: <span id="title_q7" style="color:green;"></span></b>
+				<p>
+					На каком объекте Берлина было установлено красное знамя, позднее названное Знаменем Победы?
+				</p><br>
+				Правильный ответ - <b>Рейхстаг</b><br>
+				Ваш ответ - <b id="answer_user_q7">Ответ</b>
+			</div>
+
+			<hr style="margin-top: 20px;">
+			<div class="verifyAnswers" style="margin-top: 20px;">
+				<b style="display: block; margin-top: 10px; margin-bottom: 10px;">ВОПРОС 8: <span id="title_q8" style="color:green;"></span></b>
+				<p>
+					В ходе второй мировой войны Красная Армия полностью освободила территорию:
+				</p><br>
+				Правильный ответ - <b>Польши</b><br>
+				Ваш ответ - <b id="answer_user_q8">Ответ</b>
+			</div>
+
+			<hr style="margin-top: 20px;">
+			<div class="verifyAnswers" style="margin-top: 20px;">
+				<b style="display: block; margin-top: 10px; margin-bottom: 10px;">ВОПРОС 9: <span id="title_q9" style="color:green;"></span></b>
+				<p>
+					Кто после самоубийства Гитлера стал новым главой Третьего Рейха?
+				</p><br>
+				Правильный ответ - <b>Дёниц</b><br>
+				Ваш ответ - <b id="answer_user_q9">Ответ</b>
+			</div>
+
+			<hr style="margin-top: 20px;">
+			<div class="verifyAnswers" style="margin-top: 20px;">
+				<b style="display: block; margin-top: 10px; margin-bottom: 10px;">ВОПРОС 10: <span id="title_q10" style="color:green;"></span></b>
+				<p>
+					Как называлась последняя крупная водная преграда перед Берлином?
+				</p><br>
+				Правильный ответ - <b>Река Одер</b><br>
+				Ваш ответ - <b id="answer_user_q10">Ответ</b>
+			</div>
+
+			<hr style="margin-top: 20px;">
+			<div class="verifyAnswers" style="margin-top: 20px;">
+				<b style="display: block; margin-top: 10px; margin-bottom: 10px;">ВОПРОС 11: <span id="title_q11" style="color:green;"></span></b>
+				<p>
+					Кто командовал обороной Берлина?
+				</p><br>
+				Правильный ответ - <b>Вейдлинг</b><br>
+				Ваш ответ - <b id="answer_user_q11">Ответ</b>
+			</div>
+
+			<hr style="margin-top: 20px;">
+			<div class="verifyAnswers" style="margin-top: 20px;">
+				<b style="display: block; margin-top: 10px; margin-bottom: 10px;">ВОПРОС 12: <span id="title_q12" style="color:green;"></span></b>
+				<p>
+					Когда было водружено Знамя Победы над Рейхстагом?
+				</p><br>
+				Правильный ответ - <b>30 Апреля 1945 года</b><br>
+				Ваш ответ - <b id="answer_user_q12">Ответ</b>
+			</div>
+
+			<hr style="margin-top: 20px;">
+			<div class="verifyAnswers" style="margin-top: 20px;">
+				<b style="display: block; margin-top: 10px; margin-bottom: 10px;">ВОПРОС 13: <span id="title_q13" style="color:green;"></span></b>
+				<p>
+					Кто водрузил Знамя Победы над Рейхстагом?
+				</p><br>
+				Правильный ответ - <b>Егоров</b><br>
+				Ваш ответ - <b id="answer_user_q13">Ответ</b>
+			</div>
+
+			<hr style="margin-top: 20px;">
+			<div class="verifyAnswers" style="margin-top: 20px;">
+				<b style="display: block; margin-top: 10px; margin-bottom: 10px;">ВОПРОС 14: <span id="title_q14" style="color:green;"></span></b>
+				<p>
+					Когда был проведен Парад Победы на Красной площади в Москве? Кто им командовал?
+				</p><br>
+				Правильный ответ - <b>28 июня 1945 года, Рокоссовский</b><br>
+				Ваш ответ - <b id="answer_user_q14">Ответ</b>
+			</div>
+
+			<hr style="margin-top: 20px;">
+			<div class="verifyAnswers" style="margin-top: 20px;">
+				<b style="display: block; margin-top: 10px; margin-bottom: 10px;">ВОПРОС 15: <span id="title_q15" style="color:green;"></span></b>
+				<p id="15_q">
+					"Текст обрабатывается в JavaScript"
+				</p><br>
+				Правильный ответ - <b>Около 1082 воина</b><br>
+				Ваш ответ - <b id="answer_user_q15">Ответ</b>
+			</div>
+
+			<hr style="margin-top: 20px;">
+			<div class="verifyAnswers" style="margin-top: 20px;">
+				<b style="display: block; margin-top: 10px; margin-bottom: 10px;">ВОПРОС 16: <span id="title_q16" style="color:green;"></span></b>
+				<p>
+					Кто командовал 150-й стрелковой дивизией?
+				</p><br>
+				Правильный ответ - <b>В.М. Шатилов</b><br>
+				Ваш ответ - <b id="answer_user_q16">Ответ</b>
+			</div>
+
+			<hr style="margin-top: 20px;">
+			<div class="verifyAnswers" style="margin-top: 20px;">
+				<b style="display: block; margin-top: 10px; margin-bottom: 10px;">ВОПРОС 17: <span id="title_q17" style="color:green;"></span></b>
+				<p>
+					Какого числа закончилась Берлинская операция?
+				</p><br>
+				Правильный ответ - <b>2 мая</b><br>
+				Ваш ответ - <b id="answer_user_q17">Ответ</b>
+			</div>
+
+			<hr style="margin-top: 20px;">
+			<div class="verifyAnswers" style="margin-top: 20px;">
+				<b style="display: block; margin-top: 10px; margin-bottom: 10px;">ВОПРОС 18: <span id="title_q18" style="color:green;"></span></b>
+				<p>
+					Операция «Немыслимое» это:
+				</p><br>
+				Правильный ответ - <b>План войны союзников против СССР</b><br>
+				Ваш ответ - <b id="answer_user_q18">Ответ</b>
+			</div>
+
+			<hr style="margin-top: 20px;">
+			<div class="verifyAnswers" style="margin-top: 20px;">
+				<b style="display: block; margin-top: 10px; margin-bottom: 10px;">ВОПРОС 19: <span id="title_q19" style="color:green;"></span></b>
+				<p>
+					Какие два фронта окружили Берлин?
+				</p><br>
+				Правильный ответ - <b>1-й Белорусский и 1-й Украинский</b><br>
+				Ваш ответ - <b id="answer_user_q19">Ответ</b>
+			</div>
+
+			<hr style="margin-top: 20px;">
+			<div class="verifyAnswers" style="margin-top: 20px;">
+				<b style="display: block; margin-top: 10px; margin-bottom: 10px;">ВОПРОС 20: <span id="title_q20" style="color:green;"></span></b>
+				<p>
+					Советский военачальник, подписавший акт о капитуляции Германии от имени СССР:
+				</p><br>
+				Правильный ответ - <b>Г.К. Жуков</b><br>
+				Ваш ответ - <b id="answer_user_q20">Ответ</b>
+			</div>
+
+			<center style="margin-top: 20px;">
+				<button onclick="document.location.href='index.html';" class="buttonFinishQuest">На главную</button>
+			</center>
+		</content>
+	</div>
+
+	<script src="js/finish.js"></script>
+	
+	<style>
+		*
+		{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'arial';
+		}
+		hr
+		{
+			display: block;
+			position: relative;
+			width: 100%;
+			border: 1px solid lightgray;
+		}
+		body
+		{
+			background: #ebebeb;
+		}
+		.finishBlock
+		{
+			display: block;
+			position: relative;
+			width: 40%;
+			min-height: 100px;
+			padding: 20px;
+			background: white;
+			box-shadow: 0 0 5px lightgray;
+			border-radius: 3px;
+			left: 50%;
+			transform: translate(-50%);
+			margin-top: 3%;
+			margin-bottom: 3%;
+			text-align: center;
+		}
+		.finishBlock header
+		{
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		br
+		{
+			user-select: none;
+		}
+		.buttonFinishQuest
+		{
+			transition: all .3s ease;
+			display: block;
+			position: relative;
+			padding: 10px;
+			text-align: center;
+			color: white;
+			background: black;
+			border: 1px solid black;
+			cursor: pointer;
+			outline: none;
+			user-select: none;
+			font-size: 1em;
+		}
+		.buttonFinishQuest:hover
+		{
+			background: white;
+			color: black;
+		}
+	</style>
+
+
+	<!--
+
+	=-=
+	ВОПРОС 1:
+	=-=
+	Начнём с лёгкого вопроса: как ты думаешь, как назывался город, за который 1082 воина были награждены медалью, а шестьсот заслужили звание Героя Советского Союза?
+	=-=
+	Текст - Берлин / берлин ()
+	=-=
+
+
+	=-=
+	ВОПРОС 2:
+	=-=
+	Сколько дней продолжалась Берлинская наступательная операция?
+	=-=
+	1 - 36
+	2 - 18
+	3 - 24
+	4 - 23 ()
+	5 - 58
+	=-=
+
+
+	=-=
+	ВОПРОС 3:
+	=-=
+	Что за надпись на стене Рейхстага увековечила название одного из древнейших городов Липецкой области?
+	=-=
+	1 - "За победу!"
+	2 - "Мы из Ельца" ()
+	3 - "Берлин наш!"
+	=-=
+
+
+	=-=
+	ВОПРОС 4:
+	=-=
+	Как после 1 мая 1945 года стали называть штурмовой флаг 150-й ордена Кутузова II степени Идрицкой стрелковой дивизии?
+	=-=
+	1 - Знамя Красной армии
+	2 - Знамя победы ()
+	3 - Знамя Отечества
+	=-=
+
+
+	=-=
+	ВОПРОС 5:
+	=-=
+	Когда началась Берлинская наступательная операция советских войск?
+	=-=
+	1 - 12 февраля 1944 года
+	2 - 26 мая 1945 года
+	3 - 16 апреля 1945 года ()
+	4 - 18 марта 1944 года
+	=-=
+
+
+	=-=
+	ВОПРОС 6:
+	=-=
+	Иван, Напиши фамилию маршала первого Белорусского фронта во время взятия Берлина.
+	=-=
+	Текст - Жуков / жуков ()
+	=-=
+
+
+	=-=
+	ВОПРОС 7:
+	=-=
+	На каком объекте Берлина было установлено красное знамя, позднее названное Знаменем Победы?
+	=-=
+	Текст - Рейхстаг / рейхстаг ()
+	=-=
+
+
+	=-=
+	ВОПРОС 8:
+	=-=
+	В ходе второй мировой войны Красная Армия полностью освободила территорию:
+	=-=
+	1 - Норвегии
+	2 - Польши ()
+	3 - Чехии
+	4 - Югославии
+	=-=
+
+
+	=-=
+	ВОПРОС 9:
+	=-=
+	Кто после самоубийства Гитлера стал новым главой Третьего Рейха?
+	=-=
+	1 - Борман
+	2 - Гимлер
+	3 - Геринг
+	4 - Дёниц ()
+	=-=
+
+
+	=-=
+	ВОПРОС 10:
+	=-=
+	Как называлась последняя крупная водная преграда перед Берлином?
+	=-=
+	1 - Река Висла
+	2 - Река Одер ()
+	3 - Река Эльба
+	=-=
+
+
+	=-=
+	ВОПРОС 11:
+	=-=
+	Кто командовал обороной Берлина?
+	=-=
+	1 - Вейдлинг ()
+	2 - Кейтель
+	3 - Кребс
+	=-=
+
+
+	=-=
+	ВОПРОС 12:
+	=-=
+	Когда было водружено Знамя Победы над Рейхстагом?
+	=-=
+	1 - 30 Апреля 1945 года ()
+	2 - 1 мая 1945 года
+	3 - 29 Апреля 1945 года
+	=-=
+
+
+	=-=
+	ВОПРОС 13:
+	=-=
+	Кто водрузил Знамя Победы над Рейхстагом?
+	=-=
+	1 - Чуйков
+	2 - Кантария
+	3 - Егоров ()
+	=-=
+
+
+	=-=
+	ВОПРОС 14:
+	=-=
+	Когда был проведен Парад Победы на Красной площади в Москве? Кто им командовал?
+	=-=
+	1 - 9 мая 1945 года, Жуков
+	2 - 15 мая 1945 года, Василевский
+	3 - 5 июня 1945 года, Егоров
+	4 - 28 мая 1945 года, Конев
+	5 - 28 июня 1945 года, Рокоссовский ()
+	=-=
+
+
+	=-=
+	ВОПРОС 15:
+	=-=
+	Иван, проверим твою внимательность, какое количество воинов было награждено медалью «За взятие Берлина»? Ответ на этот вопрос был в тексте первого вопроса.
+	=-=
+	1 - Около 1200 воинов
+	2 - Около 1082 воина ()
+	3 - Около 1500 воинов
+	=-=
+
+
+	=-=
+	ВОПРОС 16:
+	=-=
+	Кто командовал 150-й стрелковой дивизией?
+	=-=
+	1 - А.И. Негода
+	2 - И.С. Конев
+	3 - В.М. Шатилов ()
+	=-=
+
+
+	=-=
+	ВОПРОС 17:
+	=-=
+	Какого числа закончилась Берлинская операция?
+	=-=
+	1 - 8 мая
+	2 - 9 мая
+	3 - 2 мая ()
+	=-=
+
+
+	=-=
+	ВОПРОС 18:
+	=-=
+	Операция «Немыслимое» это:
+	=-=
+	1 - План войны союзников против СССР ()
+	2 - Подписание союзниками сепаратного мира с Германией
+	3 - План взятия Берлина
+	=-=
+
+
+	=-=
+	ВОПРОС 19:
+	=-=
+	Какие два фронта окружили Берлин?
+	=-=
+	1 - 1-й Белорусский и 1-й Украинский ()
+	2 - 2-й Белорусский и 1-й Украинский
+	=-=
+
+
+	=-=
+	ВОПРОС 20:
+	=-=
+	Советский военачальник, подписавший акт о капитуляции Германии от имени СССР:
+	=-=
+	1 - И.С. Конев
+	2 - Г.К. Жуков ()
+	3 - К.К. Рокоссовский
+	4 - В.М. Мамонтов
+	=-=
+
+	-->
+
+
+
+</body>
+</html>

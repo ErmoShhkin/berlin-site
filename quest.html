@@ -7,37 +7,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Квест - Взятие Берлина</title>
+    <title>Тест - Взятие Берлина</title>
 </head>
 <body style="overflow: hidden;">
     <script>
         // Прелоадер картинок:
-        var img_prldr = new Image();
-        img_prldr.onload = function() {
-            // Картинка загрузилась.
-        };
-        img_prldr.src = 'img/back/bg_quest_1.jpg';
-        
-        setTimeout(function()
-        {
-            img_prldr.src = 'img/back/bg_quest_2.jpg';
-        }, 200);
-        setTimeout(function()
-        {
-            img_prldr.src = 'img/back/bg_quest_3.jpg';
-        }, 300);
-        setTimeout(function()
-        {
-            img_prldr.src = 'img/back/bg_quest_4.jpg';
-        }, 400);
-        setTimeout(function()
-        {
-            img_prldr.src = 'img/back/bg_quest_5.jpg';
-        }, 500);
-        setTimeout(function()
-        {
-            img_prldr.src = 'img/back/bg_quest_6.jpg';
-        }, 600);
+        var img_prldr2 = new Image();
+        var img_prldr3 = new Image();
+        var img_prldr4 = new Image();
+        var img_prldr5 = new Image();
+        var img_prldr6 = new Image();
+
+        img_prldr2.src = 'img/back/bg_quest_2.jpg';
+        img_prldr3.src = 'img/back/bg_quest_3.jpg';
+        img_prldr4.src = 'img/back/bg_quest_4.jpg';
+        img_prldr5.src = 'img/back/bg_quest_5.jpg';
+        img_prldr6.src = 'img/back/bg_quest_6.jpg';
     </script>
 
     <!-- <button onclick="states();">Статистика</button> -->
@@ -62,7 +47,7 @@
                 <br>
                 <p style="margin-top: 10px;">Группа:</p>
                 <div class="flex__nubmers__group">
-                    <input id="group__number__1" placeholder="1" maxlength="1" type="text" class="input__text__decoration input__special__for__numbers__group">
+                    <input id="group__number__1" placeholder="2" maxlength="1" type="text" class="input__text__decoration input__special__for__numbers__group">
                     <input id="group__number__2" placeholder="15" maxlength="2" type="text" class="input__text__decoration input__special__for__numbers__group">
                 </div>
                 <button style="margin-top: 10px;" onclick="reg__func();" class="button__decoration">Начать</button>
@@ -89,20 +74,18 @@
                 <button id="button__questions__3" onclick="clicked__button__question__3();" class="button__decoration buttons__questions">tree</button>
                 <button id="button__questions__4" onclick="clicked__button__question__4();" class="button__decoration buttons__questions">four</button>
                 <button id="button__questions__5" onclick="clicked__button__question__5();" class="button__decoration buttons__questions">five</button>
-                <button id="button__get__static__user" onclick="get__static__user__answers();" class="button__decoration buttons__questions">Проверить свои ответы</button>
                 <button id="button__go__to__index" onclick="document.location.replace('https://ermoshhkin.github.io/berlin-site/');" class="button__decoration buttons__questions">Перейти на главную страницу</button>
+                <button onclick="document.location.href = 'finish_quest.html';" class="button__decoration buttons__questions" id="doGoFinishTest">Проверить ответы</button>
             </div>
 
 		</div>
 
 	</div>
 
-    <div class="block__bg__image__quest"></div>
+    <div class="block__bg__image__quest block__img__from__js__1"></div>
 
 <script src="js/main.js"></script>
 <script>
-
-    $(".block__bg__image__quest").addClass("block__img__from__js__static");
 
     var random__int__bg = 0;
     setInterval(function(){ // Замена фонового изображения каждые 10 секунд.
@@ -119,52 +102,84 @@
             $(".block__bg__image__quest").removeClass("block__img__from__js__static");
         }else if ( random__int__bg == 2 )
         {
-            $(".block__bg__image__quest").addClass("block__img__from__js__2");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__1");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__4");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__3");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__6");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__5");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__static");
+            img_prldr2.onload = function()
+            {
+                $(".block__bg__image__quest").addClass("block__img__from__js__2");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__1");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__4");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__3");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__6");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__5");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__static");
+
+                $(".block__bg__image__quest").css("background", "url("+img_prldr2.src+") center center no-repeat;");
+            }
         }else if ( random__int__bg == 3 )
         {
-            $(".block__bg__image__quest").addClass("block__img__from__js__3");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__2");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__4");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__5");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__6");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__1");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__static");
+            img_prldr3.onload = function()
+            {
+                $(".block__bg__image__quest").addClass("block__img__from__js__3");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__2");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__4");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__5");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__6");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__1");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__static");
+
+                $(".block__bg__image__quest").css("background", "url("+img_prldr3.src+") center center no-repeat;");
+            }
         }else if ( random__int__bg == 4 )
         {
-            $(".block__bg__image__quest").addClass("block__img__from__js__4");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__2");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__3");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__5");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__6");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__1");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__static");
+            img_prldr4.onload = function()
+            {
+                $(".block__bg__image__quest").addClass("block__img__from__js__4");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__2");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__3");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__5");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__6");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__1");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__static");
+
+                $(".block__bg__image__quest").css("background", "url("+img_prldr4.src+") center center no-repeat;");
+            }
         }else if ( random__int__bg == 5 )
         {
-            $(".block__bg__image__quest").addClass("block__img__from__js__5");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__2");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__3");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__4");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__1");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__6");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__static");
+            img_prldr5.onload = function()
+            {
+                $(".block__bg__image__quest").addClass("block__img__from__js__5");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__2");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__3");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__4");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__1");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__6");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__static");
+
+                $(".block__bg__image__quest").css("background", "url("+img_prldr5.src+") center center no-repeat;");
+            }
         }else if ( random__int__bg == 6 )
         {
-            $(".block__bg__image__quest").addClass("block__img__from__js__6");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__2");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__3");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__4");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__1");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__5");
-            $(".block__bg__image__quest").removeClass("block__img__from__js__static");
+            img_prldr6.onload = function()
+            {
+                $(".block__bg__image__quest").addClass("block__img__from__js__6");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__2");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__3");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__4");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__1");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__5");
+                $(".block__bg__image__quest").removeClass("block__img__from__js__static");
+
+                $(".block__bg__image__quest").css("background", "url("+img_prldr6.src+") center center no-repeat;");
+            }
         }
     }, 10000)
 
 </script>
+
+<style>
+    #doGoFinishTest
+    {
+        display: none;
+    }
+</style>
 </body>
 </html>
