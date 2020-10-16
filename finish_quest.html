@@ -10,6 +10,19 @@
 </head>
 <body>
 
+	<script>
+		/* Перенаправление обратно на тест, если сессии пустые: */
+		if (sessionStorage.getItem('name') == null) {
+			document.location.href = 'quest.html';
+			/* Останавливаем загрузку страницы: */
+			if(window.stop !== undefined) {
+				window.stop();
+			} else if (document.execCommand !== undefined) { /* для IE */
+				document.execCommand("Stop", false);
+			}
+		}
+	</script>
+
 	<div class="finishBlock">
 		<header>
 			<h3 style="margin-bottom: 10px;">Итоги</h3><hr>
